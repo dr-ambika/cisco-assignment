@@ -35,7 +35,7 @@ variable "ami" {
 variable "availability_zones" {
   description = "AWS Region availability_zones"
   type        = list(any)
-  default     = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  default     = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1e"]
 }
 
 variable "path_to_public_key" {
