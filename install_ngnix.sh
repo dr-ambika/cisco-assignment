@@ -8,7 +8,7 @@
  service nginx start
 
 #Update index.html with static data
- echo "Cisco SPL"  > /var/www/html/index.html
+ echo "<h1>Cisco SPL</h1>"  > /var/www/html/index.html
 
 # Restart ngnix
 service nginx restart

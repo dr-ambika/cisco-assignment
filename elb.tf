@@ -22,10 +22,3 @@ resource "aws_elb" "webserver-elb" {
     Name = "my-elb"
   }
 }
-
-# Create ELB Instance Attachment
-resource "aws_elb_attachment" "webserver" {
-  elb      = aws_elb.webserver-elb.id
-  count    = var.instance_count
-  instance = element(aws_instance.web.*.id, count.index)
-}

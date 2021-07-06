@@ -1,5 +1,5 @@
 #Instance Security Group
-resource "aws_security_group" "web-sg" {
+resource "aws_security_group" "webserver-sg" {
   name        = "web-sg"
   description = "security group for webserver"
   egress {
