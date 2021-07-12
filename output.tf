@@ -1,3 +1,3 @@
 output "ELB" {
-  value = aws_elb.webserver-elb.dns_name
+  value = ["${aws_lb.webserver-lb.*.dns_name}"]
 }
