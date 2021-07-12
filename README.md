@@ -68,7 +68,7 @@ cd sre_assignment
 3. Once done You are all set!
 
 ```bash
-chmod u+x;./init.sh
+chmod u+x init.sh;./init.sh
 ```
 
 
