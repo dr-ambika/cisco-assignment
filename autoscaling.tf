@@ -12,7 +12,7 @@ resource "aws_launch_configuration" "webserver-launchconfig" {
 
 resource "aws_autoscaling_group" "webserver-autoscaling" {
   name                      = "webserver-autoscaling"
-  vpc_zone_identifier       = var.create_vpc ? module.main-vpc.public_subnets : aws_default_subnet.public.*.id
+  vpc_zone_identifier       = var.create_vpc ? module.main-vpc.private_subnets : aws_default_subnet.public.*.id
   launch_configuration      = aws_launch_configuration.webserver-launchconfig.name
   min_size                  = 1
   max_size                  = 2
