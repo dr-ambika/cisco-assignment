@@ -63,7 +63,7 @@ git clone https://github.com/dr-ambika/sre_assignment.git
 cd sre_assignment
 ssh-keygen -f mykey
 ```
-2. All the default variables are set in #vars.tf. It can be overridden by creating file terraform.tfvars file with new values.
+2. All the default variables are set in  **vars.tf**. It can be overridden by creating file terraform.tfvars file with new values.
 
 3. Once done You are all set!
 
