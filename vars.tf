@@ -38,7 +38,7 @@ variable "path_to_public_key" {
 
 variable "create_vpc" {
   description = "Controls if VPC should be created"
-  default     = true
+  default     = false
 }
 
 variable "sg_count" {
