@@ -14,13 +14,13 @@
 Ref [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
 1. Open AWS Account
 2. Create IAM Admin user by name ```terraform```
-    a. Login to AWS Account
-    b. Click on Services. Choose IAM
-    c. In IAM Page on left Panel click users
-    d. Click Add Users
-    e. Enter Username as ```terraform```, Select Access type as ```Programatic access``` Click on Next
-    f. Click on ##Add user to group -> ##Create group -> ##Group name:```terraform-administrators``` -> Select ```AdminstratorAccess``` Policy
-    g. Click on ```Create group``` -> Next Review -> Create user
+    * Login to AWS Account
+    * Click on Services. Choose IAM
+    * In IAM Page on left Panel click users
+    * Click Add Users
+    * Enter Username as ```terraform```, Select Access type as ```Programatic access``` Click on Next
+    * Click on ##Add user to group -> ##Create group -> ##Group name:```terraform-administrators``` -> Select ```AdminstratorAccess``` Policy
+    * Click on ```Create group``` -> Next Review -> Create user
 
 3. Copy the Access Key ID and Secret access key or ##Download.csv
 4. Set up aws Credentials locally so that Terraform can access the AWS console
