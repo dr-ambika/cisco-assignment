@@ -32,7 +32,6 @@ v3.0               | Creates load_balancer (Application/Network) in front of an 
 
 ## Credentials
 
-Ref [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
 1. Open AWS Account
 2. Create IAM Admin user by name ```terraform```
     * Login to AWS Account
@@ -73,4 +72,11 @@ chmod u+x init.sh;./init.sh
     terraform destroy
 ```
 
-
+## References
+* **AWS IAM User Creation** 
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
+* **Terraform**
+     * https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+     * https://www.terraform.io/docs/language/values/variables.html
+     * https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+     * https://udemy.com/course/learn-devops-infrastructure-automation-with-terraform/
