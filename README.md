@@ -1,4 +1,4 @@
-# -assignment
+# assignment
 
 ## Description
 
