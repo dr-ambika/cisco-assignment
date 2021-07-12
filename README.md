@@ -61,6 +61,7 @@ Ref [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 ```bash
 git clone https://github.com/dr-ambika/sre_assignment.git
 cd sre_assignment
+ssh-keygen -f mykey
 ```
 2. All the default variables are set in #vars.tf. It can be overridden by creating file terraform.tfvars file with new values.
 
@@ -68,6 +69,5 @@ cd sre_assignment
 
 ```bash
 
-  terraform init
-  terraform plan -out plan.out
-  terraform apply plan.out```
+  terraform init  
+  terraform apply ```
