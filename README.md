@@ -14,6 +14,7 @@ aws_region        | AWS region                                                | 
 availability_zones| AWS Region availability_zones                             | ["us-east-2a", "us-east-2b", "us-east-2c"]
 instance_type     | AWS Instance Type                                         | t2.micro 
 path_to_public_key| Required to set up ssh login to instance. Can be generated using the command `sshkeygen -f mykey` | ./mykey is the default value.  This can be overridden in **terraform.tfvars file**
+type              | load balancer type                                        | application
   
 ## Releases
 
@@ -63,7 +64,7 @@ git clone https://github.com/dr-ambika/sre_assignment.git
 cd sre_assignment
 ssh-keygen -f mykey
 ```
-2. All the default variables are set in #vars.tf. It can be overridden by creating file terraform.tfvars file with new values.
+2. All the default variables are set in  **vars.tf**. It can be overridden by creating file terraform.tfvars file with new values.
 
 3. Once done You are all set!
 
@@ -71,3 +72,7 @@ ssh-keygen -f mykey
 
   terraform init  
   terraform apply 
+  
+4. To delete the resorces created run
+    ```bash
+       terraform destroy
