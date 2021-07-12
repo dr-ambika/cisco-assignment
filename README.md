@@ -73,5 +73,5 @@ chmod u+x;./init.sh
 
 
 4. To delete the resorces created run
-   ```bash
-      terraform destroy
+```bash
+    terraform destroy
