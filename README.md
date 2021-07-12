@@ -70,4 +70,4 @@ ssh-keygen -f mykey
 ```bash
 
   terraform init  
-  terraform apply ```
+  terraform apply 
