@@ -10,12 +10,12 @@ Variable          |                      Description                          | 
 ------------------|-----------------------------------------------------------|------------------
 create_vpc        | Controls if VPC and its resources should be created.      | false
 aws_profile       | AWS Terraform User Profile                                | terraform
-aws_region        | AWS region                                                | us-east-2 
+aws_region        | AWS region                                                | us-east-2
 availability_zones| AWS Region availability_zones                             | ["us-east-2a", "us-east-2b", "us-east-2c"]
-instance_type     | AWS Instance Type                                         | t2.micro 
+instance_type     | AWS Instance Type                                         | t2.micro
 path_to_public_key| Required to set up ssh login to instance. Can be generated using the command `sshkeygen -f mykey` | ./mykey is the default value.  This can be overridden in **terraform.tfvars file**
 type              | load balancer type                                        | application
-  
+
 ## Releases
 
 Tag                | Description
@@ -62,17 +62,15 @@ Ref [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 ```bash
 git clone https://github.com/dr-ambika/sre_assignment.git
 cd sre_assignment
-ssh-keygen -f mykey
 ```
 2. All the default variables are set in  **vars.tf**. It can be overridden by creating file terraform.tfvars file with new values.
 
 3. Once done You are all set!
 
 ```bash
+chmod u+x;./init.sh
 
-  terraform init  
-  terraform apply 
-  
+
 4. To delete the resorces created run
     ```bash
        terraform destroy
