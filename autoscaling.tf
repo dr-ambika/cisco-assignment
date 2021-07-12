@@ -18,6 +18,7 @@ resource "aws_autoscaling_group" "webserver-autoscaling" {
   max_size                  = 2
   health_check_grace_period = 300
   force_delete              = true
+  target_group_arns         = aws_lb_target_group.lb_target_group.*.arn
   termination_policies      = ["OldestInstance"]
 
   tag {
