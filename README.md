@@ -70,8 +70,20 @@ cd sre_assignment
 ```bash
 chmod u+x init.sh;./init.sh
 ```
-
-
 4. To delete the resorces created run
 ```bash
     terraform destroy
+```
+### Screen Shots
+1 .  Git clone and run the init.sh script
+<img width="1439" alt="Screen Shot 2021-07-12 at 4 47 44 PM" src="https://user-images.githubusercontent.com/86394121/125365493-99502080-e331-11eb-9409-f881c61cd721.png">
+<img width="1440" alt="Screen Shot 2021-07-12 at 4 47 55 PM" src="https://user-images.githubusercontent.com/86394121/125365570-b84eb280-e331-11eb-952d-1f11486049ed.png">
+
+2. Launch the web page
+<img width="1434" alt="Screen Shot 2021-07-12 at 4 48 13 PM" src="https://user-images.githubusercontent.com/86394121/125365597-c7cdfb80-e331-11eb-8478-b03cb7f7dcbb.png">
+
+3. Idempotency check
+<img width="1439" alt="Screen Shot 2021-07-12 at 4 49 04 PM" src="https://user-images.githubusercontent.com/86394121/125365624-d3b9bd80-e331-11eb-9047-10695f0e4630.png">
+<img width="1440" alt="Screen Shot 2021-07-12 at 4 48 38 PM" src="https://user-images.githubusercontent.com/86394121/125365640-dd432580-e331-11eb-8ed1-b5eb1a09517b.png">
+
+
