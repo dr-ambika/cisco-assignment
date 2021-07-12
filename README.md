@@ -1,6 +1,8 @@
 # cisco-assignment
 
-# Terraform
+## Description
+
+This tool uses terraform to create load_balancer (Application/Network) in front of an any linux server on a new network or a default network with autoscaling(scale-out/scale-in) enabled based on VM Utilization on AWS Cloud. This code sets up an environment and configure nginx webserver with static web page that says **Cisco SPL**
 
 ## Setup instructions
 
