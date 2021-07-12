@@ -33,7 +33,7 @@ variable "availability_zones" {
 }
 
 variable "path_to_public_key" {
-  default = "webserver_key.pub"
+  default = "mykey.pub"
 }
 
 variable "create_vpc" {
