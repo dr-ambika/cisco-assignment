@@ -1,8 +1,8 @@
 # cisco-assignment
 
-#Terraform
+# Terraform
 
-##Setup instructions
+## Setup instructions
 
 1. Install the latest version of Terraform from the [official site](https://www.terraform.io/downloads.html) Mac OS ```brew install terraform```
 2. Install ##git from the [official site](https://git-scm.com/download/linux) Mac OS ```brew install git```
@@ -11,7 +11,7 @@
 
 ## Credentials
 
-###Ref [official site](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
+### Ref [official site](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
 1. Open AWS Account
 2. Create IAM Admin user by name ```terraform```
     a. Login to AWS Account
@@ -33,7 +33,7 @@
    Default output format [None]:       
 ```   
 
-##Usage:
+## Usage:
 
 1. Clone this repository  https://github.com/dr-ambika/sre_assignment.git
 ```bash
