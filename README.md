@@ -1,8 +1,6 @@
-# cisco-assignment
-
 ## Description
 
-This tool uses terraform to create load_balancer (Application/Network) in front of an any linux server on a new network or a default network with autoscaling(scale-out/scale-in) enabled based on VM Utilization on AWS Cloud. This code sets up an environment and configure nginx webserver with static web page that says **Cisco SPL**
+This tool uses terraform to create load_balancer (Application/Network) in front of an any linux server on a new network or a default network with autoscaling(scale-out/scale-in) enabled based on VM Utilization on AWS Cloud. This code sets up an environment and configure nginx webserver with static web page.
 
 Some of the variables listed below from **vars.tf**. Thesse values can be overrriden in **terraform.tfvars**
 
@@ -34,7 +32,6 @@ v3.0               | Creates load_balancer (Application/Network) in front of an 
 
 ## Credentials
 
-Ref [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
 1. Open AWS Account
 2. Create IAM Admin user by name ```terraform```
     * Login to AWS Account
@@ -68,9 +65,18 @@ cd sre_assignment
 3. Once done You are all set!
 
 ```bash
-chmod u+x;./init.sh
-
-
+chmod u+x init.sh;./init.sh
+```
 4. To delete the resorces created run
-    ```bash
-       terraform destroy
+```bash
+    terraform destroy
+```
+
+## References
+* **AWS IAM User Creation** 
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
+* **Terraform**
+     * https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+     * https://www.terraform.io/docs/language/values/variables.html
+     * https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+     * https://udemy.com/course/learn-devops-infrastructure-automation-with-terraform/

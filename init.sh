@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ !-f mykey ];then
+if [ ! -f mykey ];then
   ssh-keygen -f mykey -N ''
 fi
 terraform init
